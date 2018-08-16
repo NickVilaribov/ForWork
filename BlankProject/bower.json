@@ -1,0 +1,26 @@
+{
+  "name": "BlankProject",
+  "description": "Vila's blank project",
+  "main": "index.js",
+  "authors": [
+    "Vilaribov"
+  ],
+  "license": "ISC",
+  "homepage": "vilaribov.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "bootstrap": "^4.1.1",
+    "jqBootstrapValidation": "^1.3.7",
+    "jquery-nice-select": "^1.1.0",
+    "css-hamburgers": "^0.9.3",
+    "owl.carousel": "^2.3.4"
+  }
+}

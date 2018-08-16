@@ -1,0 +1,213 @@
+body
+	&.noscroll
+		height: 100%
+		width: 100%
+		position: fixed
+		background-color: #fff;	
+
+.container-fluid
+	max-width: 1366px
+	padding: 0 15px
+	&.middle
+		max-width: 1300px
+	&.stand
+		max-width: 1200px		
+	&.narrow
+		max-width: 1140px
+	&.full
+		max-width: 100%
+
+.full
+	max-width: none
+
+.row
+	margin-right: -15px
+	margin-left: -15px
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9
+	padding-left: 15px
+	padding-right: 15px	
+
+p
+	color: $font
+
+a
+	color: $font
+	transition: all 0.5s ease
+	&:hover, &:focus, &:active
+		color: $accent
+		transition: all 0.5s ease
+	text-decoration: none
+	&:hover, &:focus, &:active
+		text-decoration: none
+
+strong
+	font-weight: 600
+
+h1, h2, h3, h4, h5, h6
+	margin: 0
+	padding: 0
+	line-height: 1.2
+	margin-bottom: 0.5rem
+
+h1
+	font-size: 2.66rem
+
+h2
+	font-size: 2rem
+
+h4
+	font-size: 1.2rem
+
+p
+	margin-bottom: 1rem
+
+*
+	outline: none !important
+
+/* Loader animation */
+
+.animation
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	background: #fff
+	right: 0
+	z-index: 99999
+	bottom: 0
+	img
+		width: 100%
+		height: auto
+
+.va
+	display: flex
+	align-items: center
+	justify-content: center
+
+.vh100 
+	height: 100vh
+
+.off
+	display: none
+
+.bleep
+	height: 2rem
+	width: 2rem
+	border-radius: 10%
+	background-color: $accent
+	-webkit-animation: bleep 1s infinite ease-in-out
+	animation: bleep 1s infinite ease-in-out
+	
+.nice-select
+	-webkit-box-shadow: inset 0px 1px 2px 0px rgba(204,204,204,0.91)
+	-moz-box-shadow: inset 0px 1px 2px 0px rgba(204,204,204,0.91)
+	box-shadow: inset 0px 1px 2px 0px rgba(204,204,204,0.91)
+	@-webkit-keyframes bleep
+	0%
+		opacity: 0
+	50%
+		opacity: 1
+	100%
+		opacity: 0
+
+
+@keyframes bleep
+	0%
+		opacity: 0
+	50%
+		opacity: 1
+	100%
+		opacity: 0
+
+
+/*--------HELPER-----------*/
+
+.button
+	font-size: 1rem
+	color: $font
+	padding: 9px 40px 9px 40px
+	border-radius: 0
+	background-color: $accent
+	-webkit-transition: all 250ms ease-in-out
+	transition: all 250ms ease-in-out
+	&:hover
+		color: $font2
+		-webkit-transition: all 250ms ease-in-out
+		transition: all 250ms ease-in-out
+	&.thin
+		font-size: 0.75rem
+		padding: 0.2rem 0.75rem 0.2rem 0.75rem;
+		
+.btn-animate
+	font-size: 0.875rem
+	z-index: 0
+	text-transform:uppercase
+	display:inline-block
+	text-align:center
+	padding: 9px 20px 9px 20px
+	border: 1px solid $font
+	background-color: transparent
+	cursor: pointer
+	border-radius: 0px
+	position: relative
+	&:before
+		-webkit-transition: 0.5s all ease
+		transition: 0.5s all ease
+		position: absolute
+		top: 0
+		left: 50%
+		right: 50%
+		bottom: 0
+		opacity: 0
+		content: ''
+		background-color: $font
+		z-index: -2
+	&:hover
+		color: #fff
+		&:before
+			-webkit-transition: 0.5s all ease
+			transition: 0.5s all ease
+			left: 0
+			right: 0
+			opacity: 1
+	&:focus
+		&:before
+			transition: 0.5s all ease
+			left: 0
+			right: 0
+			opacity: 1		
+
+			
+.dn
+	display: none !important
+	-webkit-transition: all 400ms ease-in-out
+	transition: all 400ms ease-in-out
+.h100
+	height: 100%	
+.lh1
+	line-height: 1
+.no-link
+	cursor: pointer
+.mb1
+	margin-bottom: 1rem
+.mt1
+	margin-top: 1rem
+.mt3
+	margin-top: 3rem !important			
+.dib
+	display: inline-block		
+
+/* ---- Col-5 Bootstrap adaptation ------*/
+.col-five, .col-sm-five, .col-md-five, .col-lg-five, .col-xl-five
+	position: relative;
+	min-height: 1px;
+	padding-right: 1rem;
+	padding-left: 1rem;
+
+.col-five
+	width: 20%
+	float: left
+.col-xl-five
+	width: 20%
+	float: left
