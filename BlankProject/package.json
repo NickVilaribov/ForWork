@@ -1,5 +1,5 @@
 {
-  "name": "Vila's blankProject",
+  "name": "BlankProject",
   "version": "2.0.01",
   "description": "BlankProject",
   "main": "index.js",
@@ -10,12 +10,12 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.24.4",
-    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "^3.9.4",
     "gulp-concat": "^2.6.1",
     "gulp-notify": "^3.2.0",
     "gulp-rename": "^1.2.3",
+    "gulp-rigger": "^0.5.8",
     "gulp-rsync": "0.0.8",
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.0",
@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.1.1",
-    "bower": "^1.8.4"
+    "bower": "^1.8.4",
+    "gulp": "^3.9.1"
   }
 }
