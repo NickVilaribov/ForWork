@@ -1,4 +1,4 @@
-<h1><strong>Vila's blank Project</strong> <br>Startup HTML template based on Gulp & Bootstrap 4</h1>
+<h1><strong>Vila's blank Project</strong><br>Startup HTML template based on Gulp & Bootstrap 4</h1>
 
 <p>Author: <a href="http:/vilaribov.com" target="_blank">Vilaribov</a></p>
 
